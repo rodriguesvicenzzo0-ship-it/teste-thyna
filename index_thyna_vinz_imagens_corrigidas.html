@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100719">
+<title>Para minha Thyna 💜 | Thyna &amp; Vinz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap');
+:root{--bg:#100719;--bg2:#1b0b2b;--purple:#8d4de8;--light:#eadcff;--muted:#bba9c9;--paper:#f7f0e5;--ink:#392b3e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:18px}
+body{margin:0;background:radial-gradient(circle at 50% 0%,#3a1556 0,#180a27 35%,#0d0614 100%);color:#fff;font-family:Inter,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:70px 70px;opacity:.08;z-index:0}
+section{min-height:80vh;padding:80px 20px;display:flex;align-items:center;justify-content:center;position:relative;isolation:isolate}
+/* Mais espaço entre a primeira surpresa e a seção “Onde tudo começou” */
+#home{padding-bottom:150px}
+@media(max-width:600px){#home{padding-bottom:180px}}
+.container{width:min(980px,100%);margin:auto}.center{text-align:center}
+.glow{position:absolute;width:380px;height:380px;border-radius:50%;background:#8d4de8;filter:blur(110px);opacity:.16;pointer-events:none;z-index:-1}
+h1,h2{font-family:"Cormorant Garamond",serif;font-weight:500}
+h1{font-size:clamp(3.3rem,9vw,7rem);margin:8px 0}
+h2{font-size:clamp(2.3rem,6vw,4.5rem);margin:0 0 20px}
+.script{font-family:"Great Vibes",cursive;font-size:clamp(2.6rem,7vw,4.5rem);color:#eadcff}
+.eyebrow{letter-spacing:.22em;text-transform:uppercase;color:#bda6d4;font-size:.72rem;line-height:1.8}
+.sub{color:var(--muted);line-height:1.8;max-width:650px;margin:0 auto}
+.btn{border:1px solid #a978dc;background:#6f35aa;color:#fff;padding:14px 25px;border-radius:999px;font-size:.95rem;cursor:pointer;box-shadow:0 0 30px #6f35aa55;transition:.25s}
+.btn:hover{transform:translateY(-2px);background:#8549c6}
+.scroll{position:absolute;bottom:28px;color:#a994b8;font-size:.75rem;letter-spacing:.18em}
+.date{font-family:"Cormorant Garamond";font-size:clamp(3rem,9vw,6.5rem);letter-spacing:.08em}
+.counter{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+.unit{min-width:92px;padding:16px 10px;background:#ffffff09;border:1px solid #ffffff15;border-radius:18px}
+.num{font-family:"Cormorant Garamond";font-size:2rem}
+.lab{font-size:.62rem;color:#ad9ab9;text-transform:uppercase;letter-spacing:.12em}
+.paper{max-width:820px;background:linear-gradient(135deg,#fffaf2,#eee1d1);color:var(--ink);padding:clamp(28px,6vw,65px);border-radius:5px;box-shadow:0 30px 90px #0009;position:relative;margin:auto}
+.paper:before{content:"";position:absolute;inset:10px;border:1px solid #8c6f4b33;pointer-events:none}
+.paper p{font-family:"Cormorant Garamond",serif;font-size:clamp(1.1rem,2.4vw,1.45rem);line-height:1.72;margin:0 0 20px}
+.paper .opening,.paper .closing{font-family:"Great Vibes";font-size:2.3rem;line-height:1.3}
+.signature{font-family:"Great Vibes";font-size:2.6rem;text-align:right;margin-top:30px}
+.spotify{background:#ffffff09;border:1px solid #ffffff15;border-radius:24px;padding:18px;max-width:620px;margin:30px auto}
+.photos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.photo{overflow:hidden;border-radius:22px;background:#24132f;box-shadow:0 25px 60px #0007;border:1px solid #ffffff18}
+.photo img{display:block;width:100%;height:350px;object-fit:cover;transition:.7s}
+.photo:hover img{transform:scale(1.035)}
+.photo figcaption{font-family:"Cormorant Garamond",serif;font-size:1.2rem;padding:12px;color:#e9dafa;text-align:center}
+.paeq{font-family:"Cormorant Garamond";font-size:clamp(5rem,18vw,11rem);letter-spacing:.12em;text-shadow:0 0 50px #a761ff99}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:760px;margin:auto}
+.card{padding:25px;border:1px solid #ffffff14;background:#ffffff07;border-radius:20px;font-family:"Cormorant Garamond";font-size:1.45rem}
+.rose{font-size:2rem;margin-bottom:8px}
+.promise{font-family:"Cormorant Garamond";font-size:clamp(1.8rem,5vw,3.2rem);line-height:1.35;margin:20px auto;max-width:750px}
+.fadeitem{opacity:0;transform:translateY(18px);transition:1s}
+.fadeitem.show{opacity:1;transform:none}
+.hour{font-family:"Cormorant Garamond";font-size:clamp(5rem,18vw,10rem);line-height:1;text-shadow:0 0 45px #9a55e8aa}
+.candle{font-size:5rem;cursor:pointer;filter:drop-shadow(0 0 20px #b56cff);transition:.3s;border:0;background:none}
+.candle:hover{transform:scale(1.08)}
+.secret{max-height:0;overflow:hidden;transition:max-height 1s ease}
+.secret.open{max-height:700px}
+.final{font-family:"Cormorant Garamond";font-size:clamp(1.3rem,3vw,2rem);line-height:1.7}
+.infinity{font-size:clamp(5rem,17vw,11rem);font-family:"Cormorant Garamond";color:#d9b9ff;text-shadow:0 0 55px #a04fff}
+.star-map{width:min(760px,100%);display:block;margin:28px auto;border-radius:8px;box-shadow:0 25px 80px #0009;border:1px solid #ffffff25}
+.story-note{max-width:820px;margin:28px auto 0;padding:clamp(22px,4vw,40px);border:1px solid #ffffff1c;background:linear-gradient(135deg,#ffffff0b,#ffffff04);border-radius:22px;text-align:left}
+.story-note p{font-family:"Cormorant Garamond",serif;font-size:clamp(1.2rem,2.5vw,1.5rem);line-height:1.75;color:#f0e6f7;margin:0 0 18px}
+.story-note p:last-child{margin-bottom:0}
+.section-divider{width:110px;height:1px;background:#bfa0dc;margin:26px auto}
+@media(max-width:700px){
+ section{min-height:auto;padding:70px 17px}
+ .photos,.cards{grid-template-columns:1fr}
+ .photo img{height:auto;max-height:520px;object-fit:cover}
+ .spotify{padding:10px}
+ .paper{padding:28px 22px}
+ .date{letter-spacing:.02em}
+ .unit{min-width:75px}
+ .star-map{margin:22px auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.disc,.fadeitem,.photo img,.btn{animation:none;transition:none}}
+
+.destiny-interaction{max-width:820px;margin:28px auto 0}
+.destiny-thread{width:min(420px,90%);height:110px;display:block;margin:14px auto 24px;overflow:visible}
+.thread-path{fill:none;stroke:#ff668f;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:520;stroke-dashoffset:520;filter:drop-shadow(0 0 7px #ff477f);transition:stroke-dashoffset 2.2s ease}
+.destiny-interaction.open .thread-path{stroke-dashoffset:0}
+.thread-dot{fill:#ffb3c8;filter:drop-shadow(0 0 8px #ff477f)}
+.destiny-button{border:1px solid #ff8aa9;background:linear-gradient(135deg,#8e2453,#652b91);box-shadow:0 0 28px #e7438050}
+.destiny-reveal{max-height:0;opacity:0;overflow:hidden;transform:translateY(12px);transition:max-height 1.2s ease,opacity .8s ease,transform .8s ease}
+.destiny-interaction.open .destiny-reveal{max-height:1400px;opacity:1;transform:translateY(0)}
+.destiny-reveal .story-note{margin-top:18px}
+@media(prefers-reduced-motion:reduce){.thread-path,.destiny-reveal{transition:none}}
+
+</style>
+</head>
+<body>
+<section id="home"><div class="glow"></div><div class="container center">
+<div class="eyebrow">uma pequena surpresa</div>
+<h1>Minha Thyna</h1>
+<p class="sub">Eu preparei uma coisa para você.</p><br>
+<button class="btn" onclick="document.querySelector('#begin').scrollIntoView({behavior:'smooth'})">Abrir minha surpresa</button>
+<div class="scroll">deslize para continuar</div>
+</div></section>
+
+<section id="begin"><div class="glow"></div><div class="container center">
+<div class="eyebrow">onde tudo começou</div>
+<div class="date">29 · 08 · 2026</div>
+<p class="sub">O dia em que Thyna e Vinz começaram a conversar.</p>
+<div class="counter" id="counter" aria-live="polite"></div>
+</div></section>
+
+<section id="carta-principal"><div class="container"><div class="paper">
+<p class="opening">Para a mulher que eu amo,<br>para a minha princesa.</p>
+<p>Talvez eu comece com um “oi” KKKKKK.</p>
+<p>Como você sabe, eu tenho dificuldade em iniciar cartas, mas quando é sobre você, eu estou disposto a enfrentar as minhas dificuldades a qualquer custo.</p>
+<p>Amar, dizer que ama alguém, nunca pensei que diria isso com tanta certeza a alguém, mas me intriga que, para você, eu não tenho essa dúvida, eu não tenho esse questionamento.</p>
+<p><b>Eu amo você. Amo com todas as minhas forças.</b></p>
+<p>Eu vivo você, adoro te chamar de minha princesa e você me retribuir com um “meu príncipe”. Amo a forma como você se preocupa com as pessoas, amo o jeito que você me trata e não tenho vergonha nenhuma de gritar para o mundo inteiro que eu te quero na minha vida.</p>
+<p>Você é uma das pessoas mais lindas, fortes, esforçadas, encantadoras, engraçadas e especiais que eu poderia ter ao meu lado.</p>
+<p>Mas, como diria meu mano Dfidelis: “você consegue me fazer mostrar o meu lado mais romântico junto com o mais...” KKKKKKK. Esse cara sabia o que estava escrevendo, mas eu não o julgo. Não tenho por quê.</p>
+<p>Eu estou aqui também não só para te elogiar, mas para reforçar os meus votos, para reforçar as minhas promessas.</p>
+<p>Lembra do P.A.E.Q.E.? É o símbolo do nosso amor, e eu estou disposto a sempre te lembrar disso.</p>
+<p>Quero acolher você e confortar você diante das suas inseguranças e dos seus medos. Nunca julgá-los ou diminuí-los. Justamente o contrário: quero entender e mostrar que, independente de tudo, eu estarei aqui.</p>
+<p>Quero ser o cara em quem você possa confiar os seus problemas. Quero estar por você, assim como você esteve por mim.</p>
+<p>Aliás, desde o primeiro dia em que começamos a conversar eu já sabia que minha vida jamais seria a mesma.</p>
+<p>Cada momento ao seu lado é uma bênção. Cada sorriso seu ilumina o meu mundo. Você é meu porto seguro, minha paz e também uma das minhas maiores aventuras.</p>
+<p>Eu te amo mais do que as palavras conseguem expressar.</p>
+<p>Mais uma vez não sabendo me despedir KAKAKAKAKAKA. Já está virando um costume. Sinto que falei demais, mas quando o assunto é a minha princesa, eu não me importo de falar pra caralho.</p>
+<p class="closing">Eu te adoro.<br>Eu te vivo.<br>Eu te amo.</p>
+<div class="signature">Seu príncipe, Vinz.</div>
+</div></div></section>
+
+<section id="mapa"><div class="container center">
+<div class="eyebrow">29 de agosto de 2026 · 17h14</div><h2>O nosso céu</h2>
+<p class="sub">O mapa estelar do dia em que nossas conversas começaram.</p>
+<img class="star-map" src="./mapa_estelar_29-08-2026.png" alt="Mapa estelar dedicado ao início das conversas entre Thyna e Vinz em 29 de agosto de 2026, às 17h14, na Vila Industrial, São Paulo">
+<div class="story-note">
+<p>Minha Thyna, antes mesmo do nosso primeiro encontro, antes daquele açaí, dos abraços que eu tanto queria dar em você e de todos os momentos que começamos a construir juntos, existiu um dia que tornou tudo isso possível: 29 de agosto de 2026, às 17h14.</p>
+<p>Esse mapa representa o céu daquela data, o dia em que nossas conversas começaram e em que, sem que pudéssemos imaginar tudo o que viria depois, demos o primeiro passo para construir a nossa história. Naquele instante, talvez nenhum de nós soubesse o quanto uma simples conversa poderia significar no futuro. Nós ainda tínhamos tantas coisas para descobrir um sobre o outro, tantas histórias para contar e tantos momentos que sequer imaginávamos que viveríamos.</p>
+<p>Eu não sei se o universo realmente preparou alguma coisa para nós, minha princesa, mas sei que, entre tantas pessoas, foi você quem se tornou tão importante para mim. E isso, por si só, já é algo que eu considero extraordinário.</p>
+<p>Se um dia você me perguntar quando a nossa história começou, eu vou poder voltar a esta data e dizer: foi aqui. Foi nesse dia que começaram as conversas que me aproximaram de você, da garota que eu viria a amar tanto e com quem eu ainda quero construir tantas lembranças.</p>
+<p>Talvez as estrelas não saibam o nosso nome, talvez esse céu não tenha sido desenhado especialmente para nós, mas eu sei o significado que essa data tem na nossa história. E, para mim, isso já é suficiente para tornar esse mapa especial.</p>
+<p><b>29 de agosto de 2026, às 17h14.</b> O dia em que nossas conversas começaram, o primeiro capítulo de uma história que eu quero continuar escrevendo com você.</p>
+</div>
+</div></section>
+
+<section id="fio-do-destino"><div class="container center">
+<div class="eyebrow">duas histórias, um encontro</div><h2>O fio vermelho do destino</h2>
+<p class="sub">Algumas conexões começam antes mesmo de entendermos o quanto elas vão significar.</p>
+<div class="destiny-interaction" id="destinyInteraction">
+<svg class="destiny-thread" viewBox="0 0 420 110" role="img" aria-label="Um fio vermelho conectando dois pontos">
+<circle class="thread-dot" cx="18" cy="55" r="7"/>
+<path class="thread-path" d="M18 55 C65 5, 92 105, 145 55 S225 5, 270 55 S350 105, 402 55"/>
+<circle class="thread-dot" cx="402" cy="55" r="7"/>
+</svg>
+<button class="btn destiny-button" id="destinyButton" type="button" aria-expanded="false" aria-controls="destinyReveal" onclick="revealDestiny()">Toque no fio do nosso destino</button>
+<div class="destiny-reveal" id="destinyReveal" aria-live="polite">
+<div class="infinity">∞</div>
+<div class="story-note">
+<p>Minha Thyna, você já parou para pensar que, antes de nos conhecermos, éramos apenas duas pessoas vivendo nossas próprias vidas, sem imaginar que, em algum momento, nossas histórias se encontrariam? Eu gosto de pensar na ideia do fio vermelho do destino, aquele fio invisível que conecta duas pessoas que, independentemente do tempo, da distância ou dos caminhos que precisem percorrer, acabam encontrando uma à outra.</p>
+<p>E, quando penso em nós dois, gosto de imaginar que esse fio começou a se desenrolar no dia 29 de agosto de 2026, às 17h14, quando começamos a conversar. Talvez, naquele instante, não soubéssemos o que estávamos prestes a construir, mas nossas palavras começaram a aproximar duas vidas que, até então, seguiam caminhos diferentes. Vieram as conversas, as descobertas, os sentimentos e, depois de quase dois meses, o nosso primeiro encontro. A cada novo momento, eu encontrava mais um motivo para agradecer por ter conhecido você.</p>
+<p>Eu não sei se o destino realmente existe da maneira como imaginamos, minha princesa, mas gosto de pensar que, se existisse um fio ligando pessoas destinadas a marcar a vida umas das outras, eu reconheceria o meu pela maneira como ele me conduziu até você. Não porque acredito que tudo precise estar escrito antes de acontecer, mas porque, entre tantas possibilidades, nós nos conhecemos, escolhemos continuar conversando e construímos algo que hoje significa tanto para mim.</p>
+<p>E sabe o que eu acho mais bonito nisso tudo? É que não quero depender apenas do destino para continuar ao seu lado. Quero que, além de qualquer fio imaginário, sejam as nossas escolhas, o nosso carinho, o respeito e o amor que mantenham nossos caminhos próximos. Quero continuar escolhendo você, mesmo quando a vida nos apresentar caminhos difíceis, porque amar você não é apenas acreditar que nossos caminhos se cruzaram por algum motivo, mas fazer com que cada passo que damos juntos tenha significado.</p>
+<p>Se o fio vermelho do destino realmente existe, eu gosto de imaginar que ele nos conectou naquele primeiro dia. E, se ele não existe, então que coisa extraordinária foi a vida ter permitido que eu encontrasse você.</p>
+<p><b>Thyna e Vinz.</b> Duas histórias, dois caminhos e um encontro que se tornou o começo de algo inesquecível.</p>
+<p>E, se eu pudesse pedir alguma coisa ao universo, não pediria que ele decidisse o nosso futuro por nós. Pediria apenas que nos desse a oportunidade de continuar construindo esse futuro juntos, um dia de cada vez.</p>
+<p class="center script">29.08.2026 · 17h14<br>Thyna &amp; Vinz</p>
+</div>
+</div>
+</div>
+</div></section>
+
+<section id="primeiro-encontro"><div class="container"><div class="paper">
+<p class="opening">O nosso primeiro encontro.</p>
+<p>Minha princesa, KKKKKKKKKKKKKKKKKK, por onde eu começo? Nosso primeiro encontro aconteceu depois de quase dois meses conversando, EU SEI QUE DEMOROU, MAS NÓS TIVEMOS NOSSOS MOTIVOS KKKKKKKKK. E, sinceramente, depois de tudo, eu acho que aquele momento valeu cada segundo de espera.</p>
+<p>Porque, quando chegou a hora de finalmente encontrar você, eu simplesmente me deparei com a garota mais linda e especial de todo o planeta inteiro. E não, minha linda, eu não estou exagerando. Eu simplesmente não conseguia tirar os olhos de você, era como se toda a minha atenção tivesse decidido ficar exclusivamente naquela garota que estava na minha frente.</p>
+<p>Eu queria beijar você TIPO MUUUUIIITO, E ABRAÇAR VOCÊ MAIS AINDA 😭😭😭😭😭. Depois de tanto tempo conversando, de conhecer cada vez mais a pessoa incrível que você era por mensagens, finalmente eu podia estar ali, pertinho de você, vivendo tudo aquilo de verdade.</p>
+<p>E então eu comprei o nosso açaí, nós tomamos juntos e aconteceu uma das coisas mais simples e, ao mesmo tempo, mais especiais daquele dia: eu tirei uma sujeirinha do seu rosto com um beijo. E CARA, EU SIMPLESMENTE AMEI FAZER AQUILO KKKKKKKKKKKKKKK. É SÉRIO, EU AMEI.</p>
+<p>Talvez para outra pessoa fosse só um gesto pequeno, uma coisa boba, mas, para mim, foi uma oportunidade de demonstrar carinho por você de uma maneira que eu nunca vou esquecer. Porque era você, minha princesa. Era a garota que eu queria abraçar, beijar, cuidar e ter pertinho de mim.</p>
+<p>Eu queria guardar cada segundo daquele encontro, cada detalhe seu, cada instante em que pude olhar para você e pensar que, finalmente, estávamos ali, juntos, depois de tantas conversas. E, se eu pudesse voltar naquele dia, eu voltaria sem pensar duas vezes, só para viver tudo novamente, sentir aquele nervosismo bom, olhar para você mais uma vez e ter a oportunidade de abraçar você por muito mais tempo.</p>
+<p>Nosso primeiro encontro pode ter começado com um simples açaí, mas, para mim, ele se tornou muito mais do que isso: foi uma lembrança que eu quero levar comigo por muito tempo, porque foi um dos momentos em que pude sentir de pertinho a felicidade de ter você na minha vida.</p>
+<p class="closing">Eu te adoro.<br>Eu te vivo.<br>Eu te amo.</p><div class="signature">Seu Vinz.</div>
+</div></div></section>
+
+<section id="segunda-carta"><div class="container"><div class="paper">
+<p class="opening">Uma carta que ainda vai crescer.</p>
+<p>Minha Thyna, eu ainda quero escrever muito mais sobre nós, sobre as coisas que vivemos e sobre os momentos que ainda vamos guardar. Por enquanto, deixo este espaço reservado para mais uma carta, que vai receber nossas próximas lembranças e tudo aquilo que eu ainda quero dizer a você.</p>
+<p>Porque, quando o assunto é você, minha princesa, sempre parece existir mais alguma coisa que eu quero contar, mais algum sentimento que eu quero explicar e mais uma maneira de lembrar o quanto você é importante para mim.</p>
+<p class="closing">Ainda há tanto de nós para escrever.</p><div class="signature">Com amor, Vinz.</div>
+</div></div></section>
+
+<section id="musica"><div class="container center"><div class="eyebrow">nossa música</div><h2>Uma música para nós</h2>
+<div class="spotify"><iframe style="border-radius:18px" src="https://open.spotify.com/embed/track/5ayMrwnzBZ9QanL2M9A5Ey?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Música especial do casal no Spotify"></iframe></div>
+<p class="sub">Dê o play no Spotify e continue a surpresa com a nossa música.</p>
+</div></section>
+
+<section id="fotos"><div class="container"><div class="center"><div class="eyebrow">alguns dos meus momentos favoritos</div><h2>Nós dois</h2><p class="sub">Pequenos registros de momentos que merecem ficar guardados.</p></div>
+<div class="photos" style="margin-top:28px">
+<figure class="photo"><img src="./thyna_foto_1.png" alt="Thyna e Vinz juntos" loading="lazy"><figcaption>Um pedacinho de nós</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_2.png" alt="Thyna e Vinz fazendo caretas" loading="lazy"><figcaption>Nossas brincadeiras</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_3.png" alt="Thyna e Vinz em um momento divertido" loading="lazy"><figcaption>Do nosso jeitinho</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_4.png" alt="Montagem divertida de macacos e do casal" loading="lazy"><figcaption>As nossas referências KKKK</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_5.png" alt="Thyna e Vinz em uma selfie" loading="lazy"><figcaption>Mais uma lembrança</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_6.png" alt="Thyna e Vinz com filtro de corações" loading="lazy"><figcaption>Carinho em forma de foto</figcaption></figure>
+<figure class="photo"><img src="./thyna_foto_7.png" alt="Thyna e Vinz em uma selfie divertida" loading="lazy"><figcaption>Eu e você, minha linda</figcaption></figure>
+</div></div></section>
+
+<section id="paeqe"><div class="container center"><div class="eyebrow">quatro letras e cinco promessas</div><div class="paeq">P.A.E.Q.E.</div><p class="sub">Um símbolo que talvez pareça pequeno para quem olha de fora, mas que carrega uma parte enorme da nossa história.</p>
+<div class="cards" style="margin-top:28px">
+<div class="card"><div class="rose">✦</div><b>Por você</b><br><span style="font-size:1.1rem">Eu quero crescer e me esforçar, também por nós.</span></div>
+<div class="card"><div class="rose">✦</div><b>Amar você</b><br><span style="font-size:1.1rem">Uma das certezas mais bonitas que eu tenho.</span></div>
+<div class="card"><div class="rose">✦</div><b>Estar por você</b><br><span style="font-size:1.1rem">Ouvir, acolher e respeitar o que você sente.</span></div>
+<div class="card"><div class="rose">✦</div><b>Quero você</b><br><span style="font-size:1.1rem">Nos dias simples e nos momentos inesquecíveis.</span></div>
+<div class="card" style="grid-column:1/-1"><div class="rose">✦</div><b>Esperar por você</b><br><span style="font-size:1.1rem">Respeitar o nosso tempo e continuar construindo nossa história.</span></div>
+</div></div></section>
+
+<section id="promessas"><div class="container center"><div class="eyebrow">o que eu prometo</div><h2>Estar por você</h2>
+<div id="promises"><div class="promise fadeitem">Eu prometo te ouvir.</div><div class="promise fadeitem">Prometo respeitar os seus medos.</div><div class="promise fadeitem">Prometo não diminuir aquilo que você sente.</div><div class="promise fadeitem">Prometo estar ao seu lado.</div><div class="promise fadeitem">E prometo continuar escolhendo você.</div></div>
+</div></section>
+
+<section id="detalhes"><div class="container center"><div class="eyebrow">coisas que eu amo em você</div><h2>Você, em pequenos detalhes.</h2>
+<div class="cards">
+<div class="card fadeitem"><div class="rose">✦</div>Seu jeito de cuidar.</div>
+<div class="card fadeitem"><div class="rose">✦</div>Seu sorriso.</div>
+<div class="card fadeitem"><div class="rose">✦</div>A maneira como você fala comigo.</div>
+<div class="card fadeitem"><div class="rose">✦</div>Seu jeito de me chamar de “meu príncipe”.</div>
+<div class="card fadeitem"><div class="rose">✦</div>A forma como você transforma meus dias.</div>
+<div class="card fadeitem"><div class="rose">✦</div><b>E principalmente... você.</b></div>
+</div></div></section>
+
+<section id="horas-iguais"><div class="container center"><div class="eyebrow">as horas iguais</div><div class="hour" id="hour">11:11</div><p class="sub">Tem coisas que talvez sejam coincidência...<br>Mas eu gosto de pensar que algumas delas acontecem para lembrar a gente de alguém.</p><p class="script">Sempre que eu vejo horas iguais, eu penso em você.</p></div></section>
+
+<section id="memoria"><div class="container center"><div class="eyebrow">uma pequena memória escondida</div><h2>Abra quando quiser lembrar de nós.</h2>
+<button class="btn" onclick="toggleSecret('memory')">Abrir a caixa de memórias</button>
+<div id="memory" class="secret"><br><p class="script">Alguns momentos ficam guardados para sempre.</p><p class="sub">E eu quero guardar os nossos com todo o carinho do mundo.</p></div></div></section>
+
+<section id="desejo"><div class="container center"><div class="eyebrow">um pequeno pedido</div><button class="candle" aria-label="Revelar mensagem da vela" onclick="toggleSecret('wish')">🕯️</button><p>Toque na chama.</p><div id="wish" class="secret"><p class="script">Faça um pedido.</p><p class="sub">O meu já aconteceu quando conheci você.</p></div></div></section>
+
+<section id="ps"><div class="container center"><div class="eyebrow">antes de terminar...</div><h2>Espere. Ainda não acabou.</h2>
+<button class="btn" onclick="toggleSecret('last')">P.S. ainda tem uma coisa...</button>
+<div id="last" class="secret"><br><p class="final">Obrigado por ter aparecido na minha vida, Thyna.<br>Espero que esse seja apenas o primeiro de muitos meses que ainda vamos contar juntos.</p></div></div></section>
+
+<section id="final"><div class="container center"><div class="infinity">∞</div><div class="final">
+<p><b>29.08.2026</b><br>O dia em que tudo começou.</p><p><b>29.09.2026</b><br>O nosso primeiro mês.</p>
+</div>
+<p class="script">Para a minha Thyna.<br>Para a mulher que eu amo.<br>Para a minha princesa.</p>
+<p class="final">Eu te adoro.<br>Eu te vivo.<br>Eu te amo.</p>
+<div class="eyebrow">Thyna &amp; Vinz · 29.08.2026 — ∞</div>
+</div></section>
+
+<script>
+const start = new Date('2026-08-29T17:14:00-03:00');
+function updateCounter(){
+ const now = new Date(), diff = Math.max(0, now - start);
+ const d = Math.floor(diff / 86400000), h = Math.floor(diff % 86400000 / 3600000),
+ m = Math.floor(diff % 3600000 / 60000), s = Math.floor(diff % 60000 / 1000);
+ document.querySelector('#counter').innerHTML = [['dias',d],['horas',h],['minutos',m],['segundos',s]]
+ .map(x=>`<div class="unit"><div class="num">${String(x[1]).padStart(2,'0')}</div><div class="lab">${x[0]}</div></div>`).join('');
+}
+
+function revealDestiny(){
+ const section=document.getElementById('destinyInteraction');
+ const button=document.getElementById('destinyButton');
+ const isOpen=section.classList.toggle('open');
+ button.setAttribute('aria-expanded',String(isOpen));
+ button.textContent=isOpen?'O nosso fio continua conectado 💜':'Toque no fio do nosso destino';
+}
+
+function toggleSecret(id){document.getElementById(id).classList.toggle('open')}
+updateCounter();setInterval(updateCounter,1000);
+if ('IntersectionObserver' in window){
+ const obs = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.18});
+ document.querySelectorAll('.fadeitem').forEach(x=>obs.observe(x));
+}else{document.querySelectorAll('.fadeitem').forEach(x=>x.classList.add('show'))}
+const hours=['11:11','12:12','22:22','00:00'];let hi=0;
+setInterval(()=>{hi=(hi+1)%hours.length;document.querySelector('#hour').textContent=hours[hi]},2600);
+</script>
+</body>
+</html>
